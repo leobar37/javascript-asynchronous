@@ -43,4 +43,4 @@ function foo() {
 
 <!-- .slide: class="slide_md" -->
 
-![image](../assets/cat-launch.gif)
+![image](assets/cat-launch.gif)
