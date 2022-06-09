@@ -1,0 +1,1 @@
+var o=Object.defineProperty;var a=(e,t,n)=>t in e?o(e,t,{enumerable:!0,configurable:!0,writable:!0,value:n}):e[t]=n;var p=(e,t,n)=>(a(e,typeof t!="symbol"?t+"":t,n),n);import"./main.a7b111b8.js";class s{constructor(t){p(this,"element");this.element=t}start(){}}window.onload=()=>{new s(document.getElementById("app")).start()};
