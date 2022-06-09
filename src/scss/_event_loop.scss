@@ -1,0 +1,89 @@
+.event-loop {
+  .content {
+    top: 0;
+    width: 900px;
+    height: 700px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    .column-1 {
+      grid-column: 1/ 2;
+      grid-row: 1 / 4;
+      align-self: center;
+    }
+    .column-2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 4;
+      align-self: center;
+    }
+    .column-3 {
+      grid-column: 3 / 4;
+      grid-row: 1 / 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      > div {
+        margin: 20px auto;
+      }
+    }
+
+    .box {
+      width: 250px;
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+      border: 3px solid white;
+      font-size: 30px;
+      &__header {
+        font-size: 2rem;
+        border-bottom: 3px solid white;
+      }
+
+      &__content {
+        padding-bottom: 10px;
+        min-height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        transition: all ease-in-out 0.5s;
+      }
+      &__line {
+        width: 100%;
+        background-color: blueviolet;
+        font-size: 1rem;
+        padding: 10px 12px;
+        margin: 8px 0;
+        font-family: "Inconsolata", monospace;
+      }
+    }
+  }
+}
+
+.spin {
+  animation-name: spin;
+  animation-duration: 2500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.button {
+  padding: 8px 25px;
+  border: none;
+  margin: 10px 12px;
+  background-color: blueviolet;
+  color: white;
+  cursor: pointer;
+  &:active {
+    transform: scale(1.05);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

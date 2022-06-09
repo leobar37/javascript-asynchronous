@@ -1,0 +1,80 @@
+@import "./base";
+@import "event_loop";
+
+.line {
+  border: 2px solid white;
+  width: 750px;
+  margin: 0 auto;
+  display: block;
+  color: white;
+  display: flex;
+  margin: 10px 0;
+  justify-content: flex-start;
+  padding: 20px;
+  align-items: center;
+  .log {
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    &.error {
+      color: red;
+    }
+  }
+}
+
+#app {
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rebeccapurple;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+#buttons {
+  position: fixed;
+  top: 10%;
+  right: 6%;
+  background-color: yellowgreen;
+  display: flex;
+  flex-direction: column;
+  gap: 10;
+  min-width: 250px;
+  padding: 20px 30px;
+  .button,
+  button,
+  a {
+    margin: 10px 0;
+    padding: 10px 15px;
+    border: none;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    outline: none;
+    background-color: rebeccapurple;
+    color: white;
+    transition: 0.2s;
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+}
+
+.slide_md {
+  text-align: left;
+  font-size: 30px;
+  display: flex;
+  justify-content: start;
+  .code-wrapper {
+    border: 2px solid white;
+    margin-left: 0;
+  }
+  blockquote {
+    text-align: left;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 10px 40px;
+  }
+}
