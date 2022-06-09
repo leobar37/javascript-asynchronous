@@ -54,4 +54,4 @@ main();
 
 ---
 
-![image](../assets/terrify.gif)
+![image](assets/terrify.gif)

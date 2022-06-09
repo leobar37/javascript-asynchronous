@@ -22,7 +22,7 @@ En javascript el enfoque es usar callbacks.
 
 ---
 
-![image3](../assets/3.gif)
+![image3](assets/3.gif)
 
 [Hof’s, clousures y callbacks para ser feliz en javascript.](https://leobar37.medium.com/hofs-clousures-y-callbacks-para-ser-feliz-en-javascript-fa105ed6ad44)
 
